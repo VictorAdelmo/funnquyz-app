@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    tools:context="com.example.yeah.MainResultado"
+    android:id="@+id/HueHue"
+    android:background="@drawable/fundo_questoes">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/canto_button"
+        android:backgroundTint="@android:color/white"
+        android:onClick="Anuncio"
+        android:text="VOLTAR PARA O MENU"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ImagemPatente"
+        android:layout_width="123dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/MeuNome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PontuacaoUser"
+        app:srcCompat="@mipmap/ic_bronze" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="Resultado:"
+        android:textColor="#FDFDFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/PontuacaoUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="3/7"
+        android:textColor="#FDFDFF"
+        android:textSize="40sp"
+        android:textStyle="normal|bold|italic"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="@+id/MeuNome"
+        app:layout_constraintStart_toStartOf="@+id/MeuNome"
+        app:layout_constraintTop_toBottomOf="@+id/MeuNome" />
+
+    <TextView
+        android:id="@+id/ResultadoUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/andika"
+        android:gravity="center"
+        android:text="Vencedor"
+        android:textColor="#FDFDFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImagemPatente" />
+
+    <TextView
+        android:id="@+id/MeuNome"
+        android:layout_width="151dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Você"
+        android:autoSizeTextType="uniform"
+        android:textColor="#FDFDFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/andika"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/PontuacaoOponente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="3/7"
+        android:textColor="#FDFDFF"
+        android:textSize="40sp"
+        android:textStyle="normal|bold|italic"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="@+id/NomeOponente"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/NomeOponente"
+        app:layout_constraintTop_toBottomOf="@+id/NomeOponente" />
+
+    <ImageView
+        android:id="@+id/PatenteOponente"
+        android:layout_width="123dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/NomeOponente"
+        app:layout_constraintTop_toBottomOf="@+id/PontuacaoOponente"
+        app:srcCompat="@mipmap/ic_bronze" />
+
+    <TextView
+        android:id="@+id/NomeOponente"
+        android:layout_width="151dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:text="PerdedoresNuncaGanham"
+        android:textColor="#FDFDFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/andika"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/ResutlOponente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/andika"
+        android:gravity="center"
+        android:text="Perdedor"
+        android:textColor="#FDFDFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PatenteOponente" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

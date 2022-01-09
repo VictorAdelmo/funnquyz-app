@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:screenOrientation="portrait"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yeah.InicioFrag"
+    android:background="@mipmap/fundo_inicio"
+    android:id="@+id/HueHue1"
+    android:focusableInTouchMode="true">
+
+    <Button
+        android:id="@+id/BotaoJogar"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#2BDBC9"
+        android:gravity="center"
+        android:text="Jogar Agora 1 VS 1"
+        android:textColor="#FDFDFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/Geo"
+        android:layout_width="114dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="5dp"
+        android:scaleX="1.15"
+        android:scaleY="1.15"
+        app:layout_constraintBottom_toTopOf="@+id/BarrinhaBranca"
+        app:layout_constraintEnd_toStartOf="@+id/Patente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/ic_geografia" />
+
+    <ImageView
+        android:id="@+id/Ciencias"
+        android:layout_width="115dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="5dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        app:layout_constraintBottom_toTopOf="@+id/Entretenimento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Patente"
+        app:layout_constraintTop_toBottomOf="@+id/BarrinhaPreta"
+        app:srcCompat="@mipmap/ic_cienc" />
+
+    <Toolbar
+        android:id="@+id/BarrinhaPreta"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="#44454B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Historia"
+        android:layout_width="115dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="5dp"
+        android:scaleX="1.20"
+        android:scaleY="1.20"
+        app:layout_constraintBottom_toTopOf="@+id/Geo"
+        app:layout_constraintEnd_toStartOf="@+id/Patente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BarrinhaPreta"
+        app:srcCompat="@mipmap/ic_historiaa" />
+
+    <ImageView
+        android:id="@+id/Entretenimento"
+        android:layout_width="114dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="5dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        app:layout_constraintBottom_toTopOf="@+id/BarrinhaBranca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Patente"
+        app:srcCompat="@mipmap/ic_popcorn3" />
+
+    <Toolbar
+        android:id="@+id/BarrinhaBranca"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Geo"/>
+
+    <CheckBox
+        android:id="@+id/CaixaFofo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:buttonTint="#3BFDEA"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BarrinhaBranca" />
+
+    <CheckBox
+        android:id="@+id/CaixaEngraçado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:buttonTint="#3BFDEA"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        app:layout_constraintBottom_toTopOf="@+id/BarrinhaBranca2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CaixaFofo"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <ImageView
+        android:id="@+id/ImagemFofo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="10dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        app:layout_constraintBottom_toTopOf="@+id/ImagemEngraçado"
+        app:layout_constraintStart_toEndOf="@+id/CaixaFofo"
+        app:layout_constraintTop_toTopOf="@+id/CaixaFofo"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/ic_fofo" />
+
+    <ImageView
+        android:id="@+id/ImagemEngraçado"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        app:layout_constraintBottom_toBottomOf="@+id/CaixaEngraçado"
+        app:layout_constraintStart_toEndOf="@+id/CaixaEngraçado"
+        app:layout_constraintTop_toTopOf="@+id/CaixaEngraçado"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/ic_eng1" />
+
+    <Toolbar
+        android:id="@+id/BarrinhaBranca2"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="9dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CaixaEngraçado"/>
+
+    <TextView
+        android:id="@+id/TextoEngraçado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Vídeos Engraçados"
+        android:textColor="#FDFDFF"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="@+id/ImagemEngraçado"
+        app:layout_constraintStart_toEndOf="@+id/ImagemEngraçado"
+        app:layout_constraintTop_toTopOf="@+id/ImagemEngraçado"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:id="@+id/TextoFofo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:text="Vídeos Fofos "
+        android:textAllCaps="false"
+        android:textColor="#FDFDFF"
+        android:textSize="20sp"
+        android:textStyle="normal|bold|italic"
+        android:typeface="serif"
+        android:verticalScrollbarPosition="defaultPosition"
+        app:layout_constraintBottom_toBottomOf="@+id/ImagemFofo"
+        app:layout_constraintStart_toEndOf="@+id/ImagemFofo"
+        app:layout_constraintTop_toTopOf="@+id/ImagemFofo" />
+
+
+    <TextView
+        android:id="@+id/TextoAoErrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="Ao Errar:"
+        android:textColor="#FDFDFF"
+        android:textSize="22dp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BarrinhaBranca2" />
+
+    <ImageView
+        android:id="@+id/ImagemSusto"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        app:layout_constraintBottom_toBottomOf="@+id/CaixaSusto"
+        app:layout_constraintStart_toEndOf="@+id/CaixaSusto"
+        app:layout_constraintTop_toTopOf="@+id/CaixaSusto"
+        app:srcCompat="@mipmap/ic_susto1" />
+
+    <TextView
+        android:id="@+id/TextoSusto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Susto"
+        android:textColor="#EBEBEF"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="@+id/ImagemSusto"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@+id/ImagemSusto"
+        app:layout_constraintTop_toBottomOf="@+id/ImagemSusto" />
+
+    <ImageView
+        android:id="@+id/Meme"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="30dp"
+        android:drawable="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="@+id/CaixaMeme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/CaixaMeme"
+        app:srcCompat="@mipmap/ic_memeha" />
+
+    <TextView
+        android:id="@+id/TextoMeme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Meme"
+        android:textColor="#FDFDFF"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+
+        android:typeface="serif"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="@+id/Meme"
+        app:layout_constraintStart_toStartOf="@+id/Meme"
+        app:layout_constraintTop_toBottomOf="@+id/Meme" />
+
+    <CheckBox
+        android:id="@+id/CaixaSusto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:buttonTint="#3BFDEA"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextoAoErrar" />
+
+    <CheckBox
+        android:id="@+id/CaixaMeme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:buttonTint="#3BFDEA"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        app:layout_constraintEnd_toStartOf="@+id/Meme"
+        app:layout_constraintTop_toBottomOf="@+id/TextoAoErrar" />
+
+    <ImageView
+        android:id="@+id/BarrinhaBrancaM"
+        android:layout_width="2dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="124dp"
+        app:layout_constraintBottom_toBottomOf="@+id/BarrinhaPreta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/BarrinhaPreta"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:color/background_light" />
+
+    <ImageView
+        android:id="@+id/BarrinhaBrancaV"
+        android:layout_width="2dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/BarrinhaPreta"
+        app:layout_constraintEnd_toStartOf="@+id/textViewM"
+        app:layout_constraintTop_toTopOf="@+id/BarrinhaPreta"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:color/background_light" />
+
+    <ImageView
+        android:id="@+id/Vidas"
+        android:layout_width="20dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:scaleX="1.8"
+        android:scaleY="1.8"
+        app:layout_constraintBottom_toBottomOf="@+id/BarrinhaPreta"
+        app:layout_constraintStart_toEndOf="@+id/BarrinhaBrancaM"
+        app:layout_constraintTop_toTopOf="@+id/BarrinhaPreta"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/ic_vidas1" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="33dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/BarrinhaPreta"
+        app:layout_constraintEnd_toEndOf="@+id/BarrinhaBrancaM"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/BarrinhaBrancaV"
+        app:layout_constraintTop_toTopOf="@+id/Vidas"
+        app:layout_constraintVertical_bias="0.821" />
+
+
+    <TextView
+        android:id="@+id/textViewM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:text="Em Breve"
+        android:textColor="#FDFDFF"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/BarrinhaBrancaM"
+        app:layout_constraintTop_toTopOf="@+id/BarrinhaPreta"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/VidasNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="4"
+        android:textColor="#FDFDFF"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="@+id/Vidas"
+        app:layout_constraintStart_toEndOf="@+id/Vidas"
+        app:layout_constraintTop_toTopOf="@+id/Vidas"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <ImageView
+        android:id="@+id/Patente"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/TextoPatente"
+        app:layout_constraintEnd_toStartOf="@+id/Ciencias"
+        app:layout_constraintStart_toEndOf="@+id/Historia"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.081"
+        app:srcCompat="@mipmap/ic_bronze" />
+
+    <TextView
+        android:id="@+id/TextoPatente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Bronze I"
+        android:textColor="#FDFDFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/PatenteMsg"
+        app:layout_constraintEnd_toEndOf="@+id/Patente"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="@+id/Patente" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Seu Nível:"
+        android:textColor="#FDFDFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BarrinhaPreta" />
+
+    <TextView
+        android:id="@+id/PatenteMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="(Péssimo)"
+        android:textColor="#FDFDFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/BarrinhaBranca"
+        app:layout_constraintEnd_toEndOf="@+id/TextoPatente"
+        app:layout_constraintStart_toStartOf="@+id/TextoPatente" />
+
+    <ImageView
+        android:id="@+id/Som"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="5dp"
+        android:background="#44454B"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/Reward"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Reward"
+        app:srcCompat="@mipmap/som_habilitado" />
+
+    <TextView
+        android:id="@+id/textViewNome3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:text="Nome"
+        android:textColor="#FDFDFF"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="@+id/BarrinhaPreta"
+        app:layout_constraintEnd_toStartOf="@+id/BarrinhaBrancaV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/BarrinhaPreta"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <ImageButton
+        android:id="@+id/Reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="#44454B"
+        app:layout_constraintBottom_toBottomOf="@+id/BarrinhaPreta"
+        app:layout_constraintStart_toEndOf="@+id/VidasNumero"
+        app:layout_constraintTop_toTopOf="@+id/BarrinhaPreta"
+        app:layout_constraintVertical_bias="0.571"
+        app:srcCompat="@mipmap/video_icone" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="6dp"
+        android:visibility="invisible"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

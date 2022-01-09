@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">FunnQuyz</string>
+    <string name="BANNER_ADS_UNIT_ID">ca-app-pub-4802777834168389/2939954571</string>
+    <string name="NATIVE_ADS_UNIT_ID">ca-app-pub-4802777834168389/5767086329</string>
+    <string name="REWARD_ADS_ID">ca-app-pub-4802777834168389/4979510112</string>
+    <string name="INTERTITIAL_ADS_ID">ca-app-pub-4802777834168389/8763126895</string>
+    <string name="ad_attribution" translatable="false">Ad</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main_fra">MainFra</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_main4_video">Main4ActivityVideo</string>
+    <string name="title_activity_main5">Main5Activity</string>
+    <string name="title_activity_main_loja">MainActivityLoja</string>
+    <string name="title_activity_menu_aba">MenuAba</string>
+    <string name="title_activity_main_lose">MainLose</string>
+    <string name="title_activity_main_login">MainLogin</string>
+    <string name="title_activity_main_registro">MainRegistro</string>
+    <string name="title_activity_main_shop">MainShop</string>
+    <string name="title_activity_main_susto">MainActivitySusto</string>
+    <string name="title_activity_main_more">MainMore</string>
+    <string name="title_activity_main_internet">MainInternet</string>
+    <string name="title_activity_main_search_user">MainSearchUser</string>
+    <string name="title_activity_main_wait_result">MainWaitResult</string>
+    <string name="title_activity_main_nome_user">MainNomeUser</string>
+    <string name="title_activity_main_reward">MainReward</string>
+    <string name="title_activity_bottom_navigation">BottomNavigation</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
